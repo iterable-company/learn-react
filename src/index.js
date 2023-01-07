@@ -81,7 +81,7 @@ class Game extends React.Component {
       const desc = 'Go to move #' + (idx + 1) +': (' + colrow[1] + ', ' + colrow[0] + ')';
       return (
         <li key={idx+1}>
-          <button onClick={() => this.jumpTo(idx + 1)}>{desc}</button>
+          <button onClick={() => this.jumpTo(idx + 1)} className={this.state.stepNumber -1 === idx ? 'active' : ''}>{desc}</button>
         </li>
       )
     });
