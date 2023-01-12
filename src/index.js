@@ -121,6 +121,8 @@ class Game extends React.Component {
     let status;
     if (winningSquares != null) {
       status = 'Winner: ' + currentSquare[winningSquares[0]];
+    } else if (history.length == 9) {
+      status = 'Draw'
     } else {
       status = 'Next player: ' + getSymbolByStepNumber(this.state.stepNumber);
     }
