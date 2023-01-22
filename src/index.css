@@ -39,11 +39,10 @@ body {
     background: #ddd;
   }
 
-  .other {
-    writing-mode: vertical-lr;
-   -webkit-transform: rotate(-180deg);
-   -moz-transform: rotate(-180deg);
-}
+  .win {
+    font-weight: bold;
+    color: red;
+  }
   
   .game {
     display: flex;
